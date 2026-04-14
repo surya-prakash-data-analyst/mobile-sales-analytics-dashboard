@@ -1,25 +1,26 @@
-# 📱 Mobile Sales Analytics Dashboard — Revenue Trends & Market Performance Intelligence
+# 📱 Mobile Sales Analytics Dashboard
+### Revenue Trends, Brand Performance & Market Intelligence — India 2021–2024
 
-> **Decoding ₹76.9 Cr of mobile market data into actionable business strategy** | Power BI · Python · EDA · Sales Analytics
+> **Turning 3,835 transactions into a decision-ready sales strategy** | Power BI · Python · EDA · Data Visualization
 
 ---
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
-![Pandas](https://img.shields.io/badge/Pandas-EDA-150458?logo=pandas&logoColor=white)
-![Records](https://img.shields.io/badge/Records-3%2C835_Transactions-brightgreen)
+![Transactions](https://img.shields.io/badge/Transactions-3%2C835-brightgreen)
+![Cities](https://img.shields.io/badge/Cities-19-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
 
-## 🏷️ Keywords
-`Sales Analytics` · `Power BI Dashboard` · `Revenue Analysis` · `Exploratory Data Analysis` · `KPI Tracking` · `Data Visualization` · `Market Intelligence` · `Trend Analysis` · `Business Insights` · `Data Cleaning & Transformation`
+### 🏷️ Keywords
+`Sales Analytics` · `Power BI Dashboard` · `Revenue Analysis` · `Exploratory Data Analysis` · `KPI Tracking` · `Data Visualization` · `Market Intelligence` · `Data Cleaning & Transformation` · `Business Insights` · `Python`
 
 ---
 
 ## 📌 Business Problem
 
-The mobile phone market moves fast. New models launch every quarter, consumer preferences shift with each product cycle, and sales teams are often the last to know when a trend has already peaked. Without real-time visibility into *what's selling, where, and to whom* — inventory, pricing, and promotional decisions get made on instinct rather than evidence.
+The mobile phone market moves fast. New models launch every quarter, consumer preferences shift with each product cycle, and sales teams are often the last to know when a trend has already peaked. Without real-time visibility into *what's selling, where, and to whom* — decisions get made on instinct rather than evidence.
 
 This project transforms raw transactional data from **3,835 sales records across 19 Indian cities (2021–2024)** into a decision-ready analytics dashboard that any business leader can navigate and act on.
 
@@ -27,7 +28,7 @@ This project transforms raw transactional data from **3,835 sales records across
 
 ## 🎯 Objective
 
-Design and deliver a mobile sales analytics solution that tracks revenue KPIs, surfaces brand and model performance trends, identifies geographic demand patterns, and enables smarter stock, pricing, and campaign decisions — backed by 3+ years of real transaction data.
+Build a complete mobile sales analytics solution that tracks revenue KPIs, surfaces brand and model performance trends, identifies geographic demand patterns, and enables smarter inventory, pricing, and campaign decisions — backed by 3+ years of real transaction data.
 
 ---
 
@@ -37,11 +38,11 @@ Design and deliver a mobile sales analytics solution that tracks revenue KPIs, s
 |---|---|
 | **File** | `Mobile_Sales_Data.xlsx` |
 | **Records** | 3,835 transactions |
-| **Period** | October 2021 — October 2024 (3+ years) |
+| **Period** | October 2021 — October 2024 |
 | **Features** | 14 columns — Brand, Units Sold, Price Per Unit, City, Payment Method, Customer Age, Customer Ratings, Mobile Model |
 | **Brands** | Apple · Samsung · OnePlus · Vivo · Xiaomi |
-| **Cities** | 19 cities including Delhi, Mumbai, Chennai, Bangalore, Lucknow |
-| **Derived Feature** | Revenue = Units Sold × Price Per Unit |
+| **Cities** | 19 cities across India |
+| **Derived Feature** | `Revenue = Units Sold × Price Per Unit` |
 
 ---
 
@@ -49,73 +50,97 @@ Design and deliver a mobile sales analytics solution that tracks revenue KPIs, s
 
 | Layer | Stack |
 |---|---|
-| **Dashboard & Reporting** | Power BI — DAX measures, KPI cards, slicers, drill-throughs |
+| **Dashboard & Reporting** | Power BI — DAX, KPI cards, slicers, drill-throughs |
 | **Exploratory Data Analysis** | Python — Pandas, NumPy |
 | **Data Visualization** | Matplotlib, Seaborn |
-| **Data Cleaning & Transformation** | Revenue derivation, date parsing, age group binning |
-| **Report Generation** | ReportLab (PDF) |
+| **Data Cleaning** | Revenue derivation, date parsing, feature engineering |
 | **Version Control** | Git & GitHub |
 
 ---
 
 ## 🔍 Analysis Approach
 
-1. **Data Ingestion & Cleaning** — Validated 14 columns for nulls and type issues. Derived Revenue column. Parsed date fields for time-series analysis.
-2. **Brand & Model Analysis** — Compared all 5 brands on revenue, units sold, and transaction volume. Ranked top mobile models by revenue contribution.
-3. **Geographic Intelligence** — Mapped city-level revenue across 19 cities to identify concentration risk and growth markets.
-4. **Time-Series Trend Analysis** — Plotted monthly revenue across 36+ months to identify seasonality and demand peaks.
-5. **Power BI Dashboard Development** — Designed an interactive dashboard with brand/city filters and revenue KPI tracking.
+1. **Data Ingestion & Cleaning** — Validated 14 columns. Zero missing values. Derived `Revenue` column and parsed date fields for time-series analysis.
+2. **Brand & Model Benchmarking** — Ranked all 5 brands on revenue, units, and transaction volume. Identified top 10 revenue-driving models.
+3. **Geographic Intelligence** — Mapped revenue across 19 cities. Quantified metro concentration vs. Tier-2 growth opportunity.
+4. **Time-Series Analysis** — 36-month trend analysis surfacing seasonality, peaks, and year-over-year performance.
+5. **Customer Behavior Analysis** — Payment preferences, ratings distribution, and age-group revenue segmentation.
+6. **Power BI Dashboard** — Interactive dashboard with brand/city filters, revenue KPI tracking, and model-level drill-through.
 
 ---
 
 ## 📈 Key Insights
 
-- 💰 **Total revenue: ₹76.9 Crore** across 3,835 transactions and 19,150 units sold over 3 years.
-- 🏙️ **Delhi alone contributes ₹20.4Cr (26.5%)** — followed by Mumbai at ₹12.7Cr. Two cities driving 43% of revenue = high concentration risk.
-- 📱 **iPhone SE leads all models at ₹5.96Cr** — proving mid-range value positioning beats premium flagships in volume markets.
-- ⚖️ **All 5 brands hold ~20% unit market share** — a highly competitive, undifferentiated market where ASP and model mix drive revenue differences.
-- 💳 **UPI leads payment methods at 26.4%** — digital payment adoption is well underway; cash still at 24.2% in smaller cities.
-- ⭐ **60.8% customers rated 4–5 stars** (avg: 3.69/5) — healthy satisfaction, but 22.3% low-rating segment needs brand/city-level investigation.
-- 📅 **March–May and July are consistent revenue peaks** — predictable seasonality enables proactive inventory planning.
-- 🏘️ **Tier-2 cities (Ranchi, Rajkot, Jodhpur) each generating ₹2.7Cr+** — parity with Bangalore signals serious untapped growth potential.
+- 💰 **Total revenue: ₹76.9 Crore** across 3,835 transactions and 19,150 units — 2021 to 2024
+- 🏙️ **Delhi alone: ₹20.4 Cr (26.5%)** followed by Mumbai ₹12.7 Cr — two cities = 43% of revenue
+- 📱 **iPhone SE tops all models at ₹5.96 Cr** — mid-range value positioning beats premium flagships
+- ⚖️ **All 5 brands hold ~20% unit share** — revenue differentiation is pure average selling price
+- 💳 **UPI leads at 26.4%** — cash still at 24.2%, dual digital-traditional buyer landscape
+- ⭐ **60.8% rated 4–5 stars** (avg 3.69/5) — healthy satisfaction with a 22.3% low-rating segment to address
+- 📅 **March–May and July = consistent revenue peaks** — predictable seasonality for inventory planning
+- 🏘️ **Tier-2 cities (Ranchi, Rajkot, Jodhpur) each ₹2.7 Cr+** — matching Bangalore, signaling growth opportunity
 
 ---
 
 ## 📊 Dashboard & Visualizations
 
-### KPI Summary
-![KPI Summary](images/kpi_summary.png)
+### 🔢 KPI Summary
+![KPI Banner](images/01_kpi_banner.png)
 
-### Brand Revenue Performance
-![Brand Revenue](images/brand_revenue.png)
+---
 
-### Monthly Revenue Trend
-![Monthly Trend](images/monthly_trend.png)
+### 📈 Monthly Revenue Trend — 36 Months
+![Monthly Trend](images/02_monthly_trend.png)
 
-### City-wise Sales
-![City Sales](images/city_sales.png)
+---
 
-### Payment Method Distribution
-![Payment Methods](images/payment_method.png)
+### 🏷️ Brand Revenue & Market Share
+![Brand Revenue](images/03_brand_revenue.png)
 
-### Top Mobile Models
-![Top Models](images/top_models.png)
+---
 
-### Customer Ratings Distribution
-![Customer Ratings](images/customer_ratings.png)
+### 📱 Top 10 Mobile Models by Revenue
+![Top Models](images/04_top_models.png)
 
-### Yearly Revenue Growth
-![Yearly Revenue](images/yearly_revenue.png)
+---
+
+### 🏙️ City-wise Revenue — 19 Cities
+![City Revenue](images/05_city_revenue.png)
+
+---
+
+### 💳 Payment Method Distribution
+![Payment Donut](images/06_payment_donut.png)
+
+---
+
+### ⭐ Customer Ratings Distribution
+![Customer Ratings](images/07_customer_ratings.png)
+
+---
+
+### 📅 Yearly Revenue Performance
+![Yearly Revenue](images/08_yearly_revenue.png)
+
+---
+
+### 🔥 Brand × City Revenue Heatmap
+![Brand City Heatmap](images/09_brand_city_heatmap.png)
+
+---
+
+### 📊 Brand Revenue Trend by Year
+![Brand Year Trend](images/10_brand_year_trend.png)
 
 ---
 
 ## 💡 Business Recommendations
 
-1. **Reduce Delhi–Mumbai concentration risk** — Invest in Tier-2 cities. Ranchi, Rajkot, and Jodhpur are already generating ₹2.7Cr+ each with likely lower customer acquisition cost.
-2. **Double down on mid-range models** — iPhone SE (₹5.96Cr) and OnePlus Nord (₹5.79Cr) outperform premium flagships. Prioritize mid-range inventory depth.
-3. **Build UPI-first loyalty programs** — 26.4% digital payment adoption is growing. UPI cashback or points programs can improve retention and purchase frequency.
-4. **Investigate the 22.3% low-rating segment by city and brand** — Segment 1–2 star ratings to isolate service, product, or delivery gaps before they compound.
-5. **Pre-load inventory for March–May and July peaks** — Stock up 3–4 weeks early for high-demand models to prevent lost sales during seasonal stock-out windows.
+1. **Reduce Delhi–Mumbai concentration.** Tier-2 cities at ₹2.7 Cr+ each — invest in distribution and marketing there for lower CAC and higher growth ceiling.
+2. **Prioritize mid-range model inventory.** iPhone SE (₹5.96 Cr) and OnePlus Nord (₹5.79 Cr) lead. This is where volume and margin intersect.
+3. **Build UPI-first loyalty programs.** 26.4% digital payment adoption is growing. Cashback-linked UPI rewards improve retention and repeat purchase rates.
+4. **Investigate the 22.3% low-rating cluster.** Segment 1–2 star reviews by brand and city to isolate product, delivery, or service failures before they compound.
+5. **Pre-load inventory for March–May and July peaks.** Stock up 3–4 weeks early on high-demand models to prevent stock-out revenue loss during seasonal surges.
 
 ---
 
@@ -123,32 +148,27 @@ Design and deliver a mobile sales analytics solution that tracks revenue KPIs, s
 
 ```
 mobile-sales-analytics-dashboard/
-│
 ├── 📁 dashboard/
-│   └── sales_data.pbix                    # Interactive Power BI dashboard
-│
+│   └── sales_data.pbix
 ├── 📁 data/
-│   └── Mobile_Sales_Data.xlsx             # Source dataset (3,835 × 14)
-│
+│   └── Mobile_Sales_Data.xlsx
 ├── 📁 notebooks/
-│   └── Mobile_Sales_EDA.ipynb             # Full exploratory analysis
-│
+│   └── Mobile_Sales_EDA.ipynb
 ├── 📁 scripts/
-│   └── generate_visuals.py                # Chart generation script
-│
-├── 📁 images/                             # All chart PNGs for README
-│   ├── kpi_summary.png
-│   ├── brand_revenue.png
-│   ├── monthly_trend.png
-│   ├── city_sales.png
-│   ├── payment_method.png
-│   ├── top_models.png
-│   ├── customer_ratings.png
-│   └── yearly_revenue.png
-│
+│   └── generate_visuals.py
+├── 📁 images/
+│   ├── 01_kpi_banner.png
+│   ├── 02_monthly_trend.png
+│   ├── 03_brand_revenue.png
+│   ├── 04_top_models.png
+│   ├── 05_city_revenue.png
+│   ├── 06_payment_donut.png
+│   ├── 07_customer_ratings.png
+│   ├── 08_yearly_revenue.png
+│   ├── 09_brand_city_heatmap.png
+│   └── 10_brand_year_trend.png
 ├── 📁 docs/
 │   └── Mobile_Sales_Insights_Report.pdf
-│
 ├── requirements.txt
 └── README.md
 ```
@@ -162,6 +182,7 @@ git clone https://github.com/surya-prakash-data-analyst/mobile-sales-analytics-d
 cd mobile-sales-analytics-dashboard
 pip install -r requirements.txt
 jupyter notebook notebooks/Mobile_Sales_EDA.ipynb
+python scripts/generate_visuals.py
 ```
 
 ---
@@ -170,11 +191,8 @@ jupyter notebook notebooks/Mobile_Sales_EDA.ipynb
 
 **Surya Prakash** — Data Analyst  
 📍 Hyderabad, India  
-🔗 [LinkedIn](https://www.linkedin.com/in/surya-prakash-data-analyst) · 🐙 [GitHub](https://github.com/surya-prakash-data-analyst)
-
+🔗 [LinkedIn](https://www.linkedin.com/in/surya-prakash-data-analyst) &nbsp;·&nbsp; 🐙 [GitHub](https://github.com/surya-prakash-data-analyst)  
+📧 *suryaprakash1892@gmail.com*
 ---
 
 > *"Sales data is just noise until you know what questions to ask. This dashboard was built to ask the right ones — automatically, every time."*
-
----
-*Built with real data · 3,835 transactions · 19 cities · 3 years · Insights verified · Recommendations actionable.*
