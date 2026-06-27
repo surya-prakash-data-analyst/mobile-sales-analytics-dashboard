@@ -442,7 +442,7 @@ pip install -r requirements.txt
 
 Built for: Data Analyst · BI Analyst · Sales Analyst · Reporting Analyst · Remote Analytics roles
 
-📧 suryaprakash1892@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/surya-prakash-data-analyst) · 🐙 [GitHub](https://github.com/surya-prakash-data-analyst)
+📧 suryaprakash1892@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/surya-prakash-data-analyst) · 🐙 [GitHub](https://github.com/surya-prakash-data-analyst) 🌐 [Portfolio](https://suryaprakash18.lovable.app)
 
 ---
 
